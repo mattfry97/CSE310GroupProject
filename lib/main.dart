@@ -1,7 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:table_calendar/table_calendar.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  await Supabase.initialize(
+    url: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFkaWx6eHZ3ZG9zbWRrd3N2bHZhIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjE3NjAwODQsImV4cCI6MjA3NzMzNjA4NH0.VyceByNnC3nn4Z_CFWsbkuQ4fWQL5X9_0RJ5M6WmTxs',
+    anonKey: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFkaWx6eHZ3ZG9zbWRrd3N2bHZhIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc2MTc2MDA4NCwiZXhwIjoyMDc3MzM2MDg0fQ.Te7ZjkBC-xnsIjBPfAYSc8a_W1oGmfhv63v6xsSApiU',
+  );
   runApp(const RoommatesCalendarApp());
 }
 
