@@ -13,7 +13,7 @@ void main() async {
 }
 
 class RoommatesCalendarApp extends StatelessWidget {
-  const RoommatesCalendarApp({Key? key}) : super(key: key);
+  const RoommatesCalendarApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -69,7 +69,7 @@ class RoommatesCalendarApp extends StatelessWidget {
 
 // Login Screen
 class LoginScreen extends StatefulWidget {
-  const LoginScreen({Key? key}) : super(key: key);
+  const LoginScreen({super.key});
 
   @override
   State<LoginScreen> createState() => _LoginScreenState();
@@ -151,7 +151,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
 // Home Screen with Bottom Navigation
 class HomeScreen extends StatefulWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+  const HomeScreen({super.key});
 
   @override
   State<HomeScreen> createState() => _HomeScreenState();
@@ -199,7 +199,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
 // Calendar Screen
 class CalendarScreen extends StatefulWidget {
-  const CalendarScreen({Key? key}) : super(key: key);
+  const CalendarScreen({super.key});
 
   @override
   State<CalendarScreen> createState() => _CalendarScreenState();
@@ -367,7 +367,7 @@ class _CalendarScreenState extends State<CalendarScreen> {
 
 // Chores Screen
 class ChoresScreen extends StatefulWidget {
-  const ChoresScreen({Key? key}) : super(key: key);
+  const ChoresScreen({super.key});
 
   @override
   State<ChoresScreen> createState() => _ChoresScreenState();
@@ -500,7 +500,7 @@ class _ChoresScreenState extends State<ChoresScreen> {
 
 // Profile Screen
 class ProfileScreen extends StatefulWidget {
-  const ProfileScreen({Key? key}) : super(key: key);
+  const ProfileScreen({super.key});
 
   @override
   State<ProfileScreen> createState() => _ProfileScreenState();
@@ -582,7 +582,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                           _isBusy = value;
                         });
                       },
-                      activeColor: Colors.red,
+                      activeThumbColor: Colors.red,
                     ),
                   ],
                 ),
